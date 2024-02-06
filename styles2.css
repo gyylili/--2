@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, nav, section, footer {
+    padding: 20px;
+  }
+  
+  /* 标题样式 */
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* 导航样式 */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* 列表样式 */
+  #friend-list ul, #room-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #friend-list ul li, #room-list ul li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* 页脚样式 */
+  footer {
+    background-color: #f5f5f5;
+    text-align: center;
+  }

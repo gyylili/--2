@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device=width,initial-scale=1.0">
+        <title>用户登录</title>
+        <link rel="stylesheet" href="./index.css">
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // 阻止表单的默认提交行为
+
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // 这里可以使用AJAX或其他方式将登录信息发送给后端服务器进行验证
+
+    // 假设登录验证成功，重定向到游戏主页
+    window.location.href = "游戏主页.html";
+});
+
+        </script>
+    </head>
+    <body>
+          <div class="box">
+             <h2>登录</h2>
+             <form action="" method="post" target="_blank">
+                <div class="inputbox">
+                    <input type="text"  id="username"  name="username" required="">
+                    <label>请输入用户名</label>
+                </div>
+                <div class="inputbox" >
+                    <input type="password" id="password"  name="password" required="">
+                    <label >请输入密码 </label>
+                </div>
+                <a href="./注册.html" target=blank>注册</a> <input class="box2" type="submit" name="" value="登录" id="">
+             </form>
+             <p>
+                电脑端登录
+             </p>
+          </div>
+    </body>
+</html>
