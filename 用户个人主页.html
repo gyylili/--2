@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>五子棋游戏用户主页</title>
+  <style>
+    /* 添加一些样式来美化页面 */
+    body {
+      font-family: Arial, sans-serif;
+      background: url(./v2-e0a453f623ac6bf3a2494bbd93b10f94_720w.jpg);
+      background-size: cover;
+    }
+    .dahezi{
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        margin: auto;
+        transform: translate(-65%,-65%);
+        background:rgba(237, 234, 230, 0.525) ;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 1200px;
+        padding: 100px;
+        box-shadow: 0 15px 25px rgba(157, 6, 6, 0.5);
+    }
+    #user-info {
+      margin-bottom: 20px;
+    }
+    .info-item {
+      position: relative;
+      margin-bottom: 10px;
+      text-align: center;
+      display:list-item,grid;
+      margin-right: 10px;
+      
+    }
+    .info-item label {
+      width: 100px;
+      margin-right: 10px;
+      text-align: center;
+    }
+    .info-item input[type="text"] {
+      width: 200px;
+      padding: 10px 0;
+      font-size: 10px;
+      color: black;
+      margin-bottom: 20px;
+      border: none;
+    }
+
+    #operations {
+      margin-bottom: 20px;
+    }
+    #operations button {
+      margin-right: 10px;
+    }
+
+    #game-records {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    div{
+        text-align: center;
+    }
+    a{
+      text-decoration: none;
+      font-size: larger;
+      color: crimson;
+      font-weight: bolder;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <div class="dahezi">
+    <div>
+        <h1>头像</h1>
+        <img id="user-avatar" src="./OIP-C.jpg" width="150" height="150" alt="头像">
+    </div>
+  <div id="user-info">
+    <h1>用户信息</h1>
+    <div class="info-item">
+      <label for="username">用户名：</label>
+      <input type="text" id="username">
+    </div>
+    <div class="info-item">
+      <label for="email">邮箱:</label>
+      <input type="text" id="email">
+    </div>
+    <!-- 添加其他用户信息字段 -->
+  </div>
+
+  <div id="operations">
+    <button id="add-user-btn">添加用户</button>
+  </div>
+  <button ><a href="./游戏主页.html"target=blank>游戏大厅</a></button> 
+  <div id="game-records">
+    <h2>游戏记录</h2>
+    <ul id="records-list">
+      <!-- 游戏记录将通过JavaScript动态添加 -->
+      <!-- 每条游戏记录可能包括对手的用户名、游戏结果等信息 -->
+    </ul>
+  </div>
+    </div>
+
+  <script src="主页.js"></script>
+</body>
+</html>

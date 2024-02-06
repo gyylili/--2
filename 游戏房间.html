@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>游戏房间</title>
+    <style>
+        body{
+            background: url(./房间的.jpg);
+            background-size: cover;
+            height: 750px;
+        }
+        h1{
+            position: relative;
+            text-align: center;
+
+        }
+        button{
+            text-align: center;
+        }
+        .anniu{
+            position:absolute;
+            height: 100px;
+            width: 100px;
+            top: 80%;
+            left: 50%;
+            margin: auto;
+            padding: 10px;
+            transform: translate(-50%,-50%);
+            
+
+        }
+        h3{
+            position: relative;
+            text-align: center;
+        }
+        
+        .player {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .player img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+      <h1>游戏房间</h1>
+      <div id="playersContainer"></div>
+        <h3>游戏玩家</h3>
+    <div class="anniu">
+      <button onclick="startGame()">开始游戏</button>
+    </div>
+      <script src="房间.js"></script>
+    </div>
+</body>
+</html>
